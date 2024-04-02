@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div class="pb-1" style="font-family: 'Lato', sans-serif">
+        <div id="service" class="dark:bg-gray-100">
             <!-- Code block starts -->
             <div>
-                <section class="max-w-8xl mx-auto container bg-white pt-16">
+                <section class="max-w-8xl mx-auto container pt-16">
                     <div>
                         <div role="contentinfo" class="flex items-center flex-col px-4">
                             <div tabindex="0" class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4">What we do</div>

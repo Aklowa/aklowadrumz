@@ -1,6 +1,6 @@
 <template>
 <!-- component -->
-<section>
+<section class="dark:bg-gray-100">
         
     <div role="contentinfo" class="flex items-center flex-col px-4 py-5 mb-10">
             <div tabindex="0" class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4">Gallery</div>

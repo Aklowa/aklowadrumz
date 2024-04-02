@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-8xl mx-auto container bg-white pt-16">
+  <div class="dark:bg-gray-100">
+  <div class="max-w-8xl mx-auto container pt-16">
     <div role="contentinfo" class="flex items-center flex-col px-4 py-5 mb-10">
             <div tabindex="0" class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4">Our Albums</div>
         </div>
@@ -7,6 +8,10 @@
     :style="{
       '--swiper-navigation-color': '#fff',
       '--swiper-pagination-color': '#fff',
+    }"
+    :autoplay="{
+      delay: 5000,
+      disableOnInteraction: true,
     }"
     :loop="true"
     :spaceBetween="10"
@@ -48,7 +53,7 @@
 
         <a
           href="https://www.boomplay.com/artists/2882588"
-          class="block rounded-full bg-white text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          class="block rounded-full bg-white text-sm font-medium text-white shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
         >
         <img class="serv_img_2 text-primary" src="../../assets/img/proper/boomplay.svg"></img>
         </a>
@@ -255,6 +260,7 @@
     >
   </swiper>
   </div>
+  </div>
 </template>
 <script>
   import { ref } from 'vue';
@@ -271,7 +277,7 @@
   // import './style.css';
 
   // import required modules
-  import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+  import { Autoplay, FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
   export default {
     components: {
@@ -288,7 +294,7 @@
       return {
         thumbsSwiper,
         setThumbsSwiper,
-        modules: [FreeMode, Navigation, Thumbs],
+        modules: [Autoplay, FreeMode, Navigation, Thumbs],
       };
     },
   };

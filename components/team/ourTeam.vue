@@ -1,4 +1,5 @@
 <template>
+    <div id="team">
 	<section class="py-6 dark:bg-gray-100 dark:text-gray-800">
 		<div class="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
 			<h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">The talented people behind the scenes</h1>
@@ -99,4 +100,5 @@
 			</div>
 		</div>
 	</section>
+</div>
 </template>
