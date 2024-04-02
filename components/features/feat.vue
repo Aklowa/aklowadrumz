@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="pb-16" style="font-family: 'Lato', sans-serif">
+        <div class="pb-1" style="font-family: 'Lato', sans-serif">
             <!-- Code block starts -->
-            <dh-component>
+            <div>
                 <section class="max-w-8xl mx-auto container bg-white pt-16">
                     <div>
                         <div role="contentinfo" class="flex items-center flex-col px-4">
-                            <hh1 tabindex="0" class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4">What we do</hh1>
+                            <div tabindex="0" class="focus:outline-none text-4xl lg:text-4xl font-extrabold text-center leading-10 text-gray-800 lg:w-5/12 md:w-9/12 pt-4">What we do</div>
                         </div>
                         <div tabindex="0" aria-label="group of cards" class="focus:outline-none mt-20 flex flex-wrap justify-center gap-10 px-4">
                             <div tabindex="0" aria-label="card 1" class="focus:outline-none flex sm:w-full md:w-5/12 pb-20">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </section>
-            </dh-component>
+            </div>
             <!-- Code block ends -->
   <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
         </div>

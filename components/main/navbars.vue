@@ -1,7 +1,7 @@
 <template>
   <nav class="relative flex flex-wrap items-center justify-between ">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
-      <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto  sm:px-0 lg:static lg:block lg:justify-start">
          
 <logo />
         <button class="text-white cursor-pointer text-xl ml-10 leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" v-on:click="toggleNavbar()">

@@ -1,7 +1,7 @@
 <template>
-    <div class="relative flex flex-wrap items-center justify-between px-2 ">
+    <div class="relative flex flex-wrap items-center justify-between ">
       <div class="flex items-center">
-        <img class="h-20 mr-4" src="../../assets/img/proper/aklowa_logo.svg" alt="Aklowa Logo" />
+        <img class="h-20" src="../../assets/img/proper/aklowa_logo.svg" alt="Aklowa Logo" />
         <p class="main_text text-white">
           <span>A</span>
           <span>K</span>
