@@ -3,7 +3,7 @@ import { Static } from "vue";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr: false,
+  ssr: true,
   target: Static,
   app: {
     baseURL: '/aklowadrumband/', // baseURL: '/<repository>/'
