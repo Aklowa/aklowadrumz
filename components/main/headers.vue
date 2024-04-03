@@ -28,7 +28,7 @@
 </section>
 
    
-    <nav id="topNav" ref="navBar" :class="{ 'sticky top-0 z-10 shadow-md': isSticky }" class="bg-black text-center  transition-all duration-500">
+<nav id="topNav" :class="{ 'sticky-nav': isSticky }" class="bg-black text-center transition-all duration-500">
       <ul class="list-none font-semibold text-uppercase">
         <navbars />
       </ul>
@@ -39,7 +39,7 @@
   <script>
 import navbars from './navbars.vue';
 import headtext from './headtext.vue';
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted } from 'vue';
 
 export default {
   components: {
@@ -47,25 +47,28 @@ export default {
     headtext,
   },
   setup() {
-    const navBar = ref(null);
-    const headerHeight = ref(0);
     const isSticky = ref(false);
 
     onMounted(() => {
-      headerHeight.value = navBar.value?.offsetHeight;
-      if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', () => {
-          isSticky.value = window.scrollY >= headerHeight.value;
-        });
-      }
+      window.addEventListener('scroll', handleScroll);
     });
 
+    const handleScroll = () => {
+      isSticky.value = window.pageYOffset > 0;
+    };
+
     return {
-      navBar,
-      headerHeight,
-      isSticky: computed(() => isSticky.value),
+      isSticky,
     };
   },
 };
 </script>
-  
+
+<style scoped>
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+</style>

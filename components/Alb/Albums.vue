@@ -1,4 +1,5 @@
 <template>
+  <div id="album">
   <div class="dark:bg-gray-100">
   <div class="max-w-8xl mx-auto container pt-16">
     <div role="contentinfo" class="flex items-center flex-col px-4 py-5 mb-10">
@@ -259,6 +260,7 @@
         src="../../assets/img/proper/ak1.jpg" /></swiper-slide
     >
   </swiper>
+  </div>
   </div>
   </div>
 </template>

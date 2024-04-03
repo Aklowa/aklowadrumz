@@ -1,5 +1,5 @@
 <template>
-<!-- component -->
+<div id="gallery">
 <section class="dark:bg-gray-100">
         
     <div role="contentinfo" class="flex items-center flex-col px-4 py-5 mb-10">
@@ -71,5 +71,5 @@
             </div>
         </div>
 </section>
-
+</div>
 </template>
