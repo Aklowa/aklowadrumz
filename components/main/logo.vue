@@ -1,8 +1,9 @@
 <template>
     <div class="relative flex flex-wrap items-center justify-between ">
+      <NuxtLink to="/">
       <div class="flex items-center">
-        <img class="h-20" src="../../assets/img/proper/aklowa_logo.svg" alt="Aklowa Logo" />
-        <p class="main_text text-white">
+        <img class="h-20 lg:ml-10" src="../../assets/img/proper/aklowa_logo.svg" alt="Aklowa Logo" />
+        <p class="main_text text-black">
           <span>A</span>
           <span>K</span>
           <span>L</span>
@@ -10,7 +11,7 @@
           <span>W</span>
           <span>A</span>
         </p>
-      </div>
+      </div></NuxtLink>
     </div>
   </template>
   

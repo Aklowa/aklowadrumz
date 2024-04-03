@@ -1,3 +1,5 @@
+
+import { NuxtLink } from '#build/components';
 <template>
 <div id="gallery">
 <section class="dark:bg-gray-100">
@@ -12,12 +14,12 @@
               <div class="absolute bottom-0 left-0 right-0 h-20 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                 <h2 class="text-xl font-semibold">Dance Performance</h2>
                 <div class="mt-1 flex flex-wrap gap-1 text-center">
-                    <a
-                    href="#"
+                    <NuxtLink
+                    to="/blog/dance"
                     class="block w-full rounded bg-rose-600 px-2 py-1 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                     >
                     Learn more
-                    </a>
+                    </NuxtLink>
                 </div>
               </div>
             </div>
@@ -28,12 +30,12 @@
               <div class="absolute bottom-0 left-0 right-0 h-20 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                 <h2 class="text-xl font-semibold">International Events</h2>
                 <div class="mt-1 flex flex-wrap gap-1 text-center">
-                    <a
-                    href="#"
+                    <NuxtLink
+                    to="/blog/intEvents"
                     class="block w-full rounded bg-rose-600 px-2 py-1 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                     >
                     Learn more
-                    </a>
+                    </NuxtLink>
                 </div>
               </div>
             </div>
@@ -44,12 +46,12 @@
               <div class="absolute bottom-0 left-0 right-0 h-20 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                 <h2 class="text-xl font-semibold">Training & Workshop</h2>
                 <div class="mt-1 flex flex-wrap gap-1 text-center">
-                    <a
-                    href="#"
+                    <NuxtLink
+                    to="/blog/workshop"
                     class="block w-full rounded bg-rose-600 px-2 py-1 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                     >
                     Learn more
-                    </a>
+                    </NuxtLink>
                 </div>
               </div>
             </div>
@@ -60,12 +62,12 @@
               <div class="absolute bottom-0 left-0 right-0 h-20 bg-black bg-opacity-50 backdrop-blur text-white p-4 rounded-b-lg">
                 <h2 class="text-xl font-semibold">Acrobatics</h2>
                 <div class="mt-1 flex flex-wrap gap-1 text-center">
-                    <a
-                    href="#"
+                    <NuxtLink
+                    to="/blog/acrobatics"
                     class="block w-full rounded bg-rose-600 px-2 py-1 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                     >
                     Learn more
-                    </a>
+                    </NuxtLink>
                 </div>
               </div>
             </div>

@@ -15,12 +15,12 @@
       <headtext />
       <!-- Button Starts -->
       <div class="mt-8 flex justify-center">
-        <a
-          href="#"
+        <NuxtLink
+          to="/blog/history"
           class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
         >
           Get to know us
-        </a>
+        </NuxtLink>
       </div>
       <!-- Button Ends -->
     </div>
@@ -28,7 +28,7 @@
 </section>
 
    
-<nav id="topNav" :class="{ 'sticky-nav': isSticky }" class="bg-black text-center transition-all duration-500">
+<nav id="topNav" :class="{ 'sticky-nav': isSticky }" class="bg-rose-100 text-center transition-all duration-500">
       <ul class="list-none font-semibold text-uppercase">
         <navbars />
       </ul>
