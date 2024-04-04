@@ -238,9 +238,8 @@
   </swiper>
   <swiper
     @swiper="setThumbsSwiper"
-    :loop="true"
-    :spaceBetween="4"
-    :slidesPerView="4"
+    :spaceBetween="10"
+    :slides-per-view="4"
     :freeMode="true"
     :watchSlidesProgress="true"
     :modules="modules"

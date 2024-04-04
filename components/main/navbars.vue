@@ -5,39 +5,39 @@
          
 <logo />
         <button class="text-black cursor-pointer text-xl ml-10 leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" v-on:click="toggleNavbar()">
-          <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-bars" />
+          <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="'fas' fa-bars" />
         </button>
       </div>
       <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
         <ul class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#about">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-address-card" /><span class="ml-2">About</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'address-card']" /><span class="ml-2">About</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#service">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-briefcase" /><span class="ml-2">Services</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'briefcase']" /><span class="ml-2">Services</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#gallery">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-images" /><span class="ml-2">Gallery</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'images']" /><span class="ml-2">Gallery</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#album">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-record-vinyl" /><span class="ml-2">Album</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'record-vinyl']" /><span class="ml-2">Album</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#team">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-people-group" /><span class="ml-2">Team</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'people-group']" /><span class="ml-2">Team</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="#contact">
-              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" icon="fa-solid fa-envelopes-bulk" /><span class="ml-2">Contact</span>
+              <font-awesome-icon class="text-lg leading-lg text-black opacity-75" :icon="['fas', 'envelopes-bulk']" /><span class="ml-2">Contact</span>
             </a>
           </li>
         </ul>

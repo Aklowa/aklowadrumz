@@ -3,7 +3,7 @@ import { Static } from "vue";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr: true,
+  ssr: false,
   target: Static,
   app: {
     baseURL: '/aklowadrumz/', // baseURL: '/<repository>/'
@@ -18,6 +18,7 @@ export default defineNuxtConfig({
 },
 build: {
   assetsDir: 'assets',
+  publicPath: '/_/',
 transpile: ['@fortawesome/vue-fontawesome'],
 chunkSizeWarningLimit: 100000,
 cssMinify: {
@@ -37,5 +38,5 @@ cssMinify: {
   },
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
-    ]
+    ],
 })
