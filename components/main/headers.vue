@@ -1,41 +1,44 @@
 <template>
   <div>
-<section
-  class="h-screen relative bg-[url(../../assets/img/proper/Nat.webp)] bg-cover bg-center bg-no-repeat"
->
-  <div
-    class="absolute col-start-1 row-start-1 bg-white/75 bg-opacity-70 w-full h-full   sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
-  ></div>
+    <section
+      class="h-screen relative bg-[url(../../assets/img/proper/Nat.webp)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="absolute col-start-1 row-start-1 bg-white/75 bg-opacity-70 w-full h-full   sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+      />
 
-  <div
-    class="relative mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
-  >
-    <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-      
-      <headtext />
-      <!-- Button Starts -->
-      <div class="mt-8 flex justify-center">
-        <NuxtLink
-          to="/blog/history"
-          class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-        >
-          Get to know us
-        </NuxtLink>
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      >
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <headtext />
+          <!-- Button Starts -->
+          <div class="mt-8 flex justify-center">
+            <NuxtLink
+              to="/blog/history"
+              class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+            >
+              Get to know us
+            </NuxtLink>
+          </div>
+          <!-- Button Ends -->
+        </div>
       </div>
-      <!-- Button Ends -->
-    </div>
-  </div>
-</section>
+    </section>
 
-   
-<nav id="topNav" :class="{ 'sticky-nav': isSticky }" class="bg-rose-100 text-center transition-all duration-500">
+
+    <nav
+      id="topNav"
+      :class="{ 'sticky-nav': isSticky }"
+      class="bg-rose-100 text-center transition-all duration-500"
+    >
       <ul class="list-none font-semibold text-uppercase">
         <navbars />
       </ul>
     </nav>
-    </div>
-  </template>
-  
+  </div>
+</template>
+
   <script>
 import navbars from './navbars.vue';
 import headtext from './headtext.vue';

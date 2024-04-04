@@ -1,8 +1,12 @@
 <template>
-    <div class="relative flex flex-wrap items-center justify-between ">
-      <NuxtLink to="/">
+  <div class="relative flex flex-wrap items-center justify-between ">
+    <NuxtLink to="/">
       <div class="flex items-center">
-        <img class="h-20 lg:ml-10" src="../../assets/img/proper/aklowa_logo.svg" alt="Aklowa Logo" />
+        <img
+          class="h-20 lg:ml-10"
+          src="../../assets/img/proper/aklowa_logo.svg"
+          alt="Aklowa Logo"
+        >
         <p class="main_text text-black">
           <span>A</span>
           <span>K</span>
@@ -11,18 +15,19 @@
           <span>W</span>
           <span>A</span>
         </p>
-      </div></NuxtLink>
-    </div>
-  </template>
-  
+      </div>
+    </NuxtLink>
+  </div>
+</template>
+
   <script setup>
   import { useNuxtApp } from "#app";
-  
+
   const { $gsap } = useNuxtApp();
-  
+
   onMounted(() => {
     const tl = $gsap.timeline({ repeat: 0 }); // No repeat
-  
+
     // Animate opacity of each letter one after another
     tl.fromTo(
       ".main_text span",
@@ -44,4 +49,3 @@
     );
   });
   </script>
-  

@@ -2,7 +2,7 @@ import { Static } from "vue";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: process.env.NODE_ENV !== 'production' },
   ssr: false,
   target: Static,
   app: {
@@ -13,12 +13,11 @@ export default defineNuxtConfig({
       meta: [
             { name: 'viewport', content: 'width=device-width, initial-scale=1' }
         ],
-
+        script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true }],
     }
 },
 build: {
   assetsDir: 'assets',
-  publicPath: '/_/',
 transpile: ['@fortawesome/vue-fontawesome'],
 chunkSizeWarningLimit: 100000,
 cssMinify: {
@@ -26,9 +25,24 @@ cssMinify: {
 },
 },
     
-    modules: ['@hypernym/nuxt-gsap','@nuxtjs/tailwindcss', 'nuxt-purgecss' ],
+publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
+
+optimization: {
+  splitChunks: {
+    name: true,
+  },
+  runtimeChunk: true,
+},
+
+splitChunks: {
+  layouts: true,
+  pages: true,
+  commons: true,
+},
+
+    modules: ['@hypernym/nuxt-gsap','@nuxtjs/tailwindcss', 'nuxt-purgecss', '@nuxtjs/eslint-module' ],
   tailwindcss: {
-    cssPath: ['../assets/css/tailwind.css', { injectPosition: "first" }],
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
     configPath: 'tailwind.config',
     exposeConfig: {
       level: 2
