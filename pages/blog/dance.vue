@@ -101,13 +101,13 @@
 					<div class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
                         <div class="relative rounded-lg overflow-hidden">
                             <!-- Video -->
-                            <video ref="video" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo">
+                            <video id="video1" ref="video" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo1">
                             <source src="../../assets/img/ak_img/vids/VID-20240329-WA0005.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                             </video>
                             <!-- Play Button Overlay -->
                             <div v-if="!isPlaying" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 cursor-pointer">
-                            <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" @click="playVideo">
+                            <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" @click="playVideo1">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v18l14-9L5 3z" />
                             </svg>
                             </div>
@@ -121,13 +121,13 @@
 					<div class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
                         <div class="relative rounded-lg overflow-hidden">
                             <!-- Video -->
-                            <video ref="video" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo">
+                            <video id="video2" ref="video2" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo2">
                             <source src="../../assets/img/ak_img/vids/VID-20240329-WA0018.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                             </video>
                             <!-- Play Button Overlay -->
-                            <div v-if="!isPlaying" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 cursor-pointer">
-                            <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" @click="playVideo">
+                            <div v-if="!isPlaying2" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 cursor-pointer">
+                            <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" @click="playVideo2">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v18l14-9L5 3z" />
                             </svg>
                             </div>
@@ -219,28 +219,41 @@
 	</div>
 </template>
 
-<script>
-import logo from '~/components/main/logo.vue'
-    export default {
-        components:{
-            logo
-        },
-        data() {
-    return {
-      isPlaying: false
-    };
-  },
-  methods: {
-    playVideo() {
-      const video = this.$refs.video;
-      if (video.paused) {
-        video.play();
-        this.isPlaying = true;
-      } else {
-        video.pause();
-        this.isPlaying = false;
-      }
-    }
-  } 
-    }
+<script setup>
+import logo from '~/components/main/logo.vue';
+import { ref, onMounted } from 'vue';
+
+const isPlaying = ref(false);
+const isPlaying2 = ref(false);
+
+// Define video refs
+const video1 = ref(null);
+const video2 = ref(null);
+
+// Attach video elements to their respective refs after component mount
+onMounted(() => {
+  video1.value = document.querySelector('#video1');
+  video2.value = document.querySelector('#video2');
+});
+
+// Function to play video 1
+const playVideo1 = () => {
+  if (video1.value && video1.value.play) {
+    video1.value.play();
+    isPlaying.value = true;
+  } else {
+    isPlaying.value = false;
+  }
+};
+
+// Function to play video 2
+const playVideo2 = () => {
+  if (video2.value && video2.value.play) {
+    video2.value.play();
+    isPlaying2.value = true;
+  } else {
+    isPlaying2.value = false;
+  }
+};
 </script>
+

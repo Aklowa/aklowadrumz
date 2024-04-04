@@ -106,7 +106,7 @@
 					<div class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-50">
     <div class="relative rounded-lg overflow-hidden">
       <!-- Video -->
-      <video ref="video" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo">
+      <video id="video1" ref="video1" class=" inset-0 w-full h-full object-cover cursor-pointer" controls @click="playVideo">
         <source src="../../assets/img/ak_img/vids/VID-20240329-WA0005.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -228,28 +228,28 @@
 	</div>
 </template>
 
-<script>
-import logo from '~/components/main/logo.vue'
-    export default {
-        components:{
-            logo
-        },
-        data() {
-    return {
-      isPlaying: false
-    };
-  },
-  methods: {
-    playVideo() {
-      const video = this.$refs.video;
-      if (video.paused) {
-        video.play();
-        this.isPlaying = true;
-      } else {
-        video.pause();
-        this.isPlaying = false;
-      }
-    }
-  } 
-    }
+<script setup>
+import logo from '~/components/main/logo.vue';
+import { ref, onMounted } from 'vue';
+
+const isPlaying = ref(false);
+
+// Define video refs
+const video1 = ref(null);
+
+// Attach video elements to their respective refs after component mount
+onMounted(() => {
+  video1.value = document.querySelector('#video1');
+});
+
+// Function to play video 1
+const playVideo = () => {
+  if (video1.value && video1.value.play) {
+    video1.value.play();
+    isPlaying.value = true;
+  } else {
+    isPlaying.value = false;
+  }
+};
+
 </script>

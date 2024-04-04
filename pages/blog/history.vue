@@ -209,28 +209,7 @@
 	</div>
 </template>
 
-<script>
-import logo from '~/components/main/logo.vue'
-    export default {
-        components:{
-            logo
-        },
-        data() {
-    return {
-      isPlaying: false
-    };
-  },
-  methods: {
-    playVideo() {
-      const video = this.$refs.video;
-      if (video.paused) {
-        video.play();
-        this.isPlaying = true;
-      } else {
-        video.pause();
-        this.isPlaying = false;
-      }
-    }
-  } 
-    }
+<script setup>
+import logo from '~/components/main/logo.vue';
+
 </script>

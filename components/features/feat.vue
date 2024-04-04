@@ -66,8 +66,6 @@
                     </div>
                 </section>
             </div>
-            <!-- Code block ends -->
-  <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
         </div>
     </div>
 </template>

@@ -15,7 +15,7 @@
       disableOnInteraction: true,
     }"
     :loop="true"
-    :spaceBetween="10"
+    :spaceBetween="4"
     :navigation="true"
     :thumbs="{ swiper: thumbsSwiper.value }"
     :modules="modules"
@@ -239,7 +239,7 @@
   <swiper
     @swiper="setThumbsSwiper"
     :loop="true"
-    :spaceBetween="10"
+    :spaceBetween="4"
     :slidesPerView="4"
     :freeMode="true"
     :watchSlidesProgress="true"

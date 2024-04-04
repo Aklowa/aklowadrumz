@@ -23,23 +23,4 @@ import Team from '~/components/team/ourTeam.vue';
 import Contact from '~/components/contact/contactUs.vue';
 import Footer from '~/components/foot/footer.vue';
 
-// export default{
-//     components:{
-//         Headers,
-//         About,
-//         Features,
-//         Gall
-//     }, 
-//     setup(){
-//         const imageSrc=ref(require('../../assets/img/proper/party-.svg'));
-//         return{
-//             imageSrc
-//         }
-//     }
-// }
-
 </script>
-
-<!-- <style lang="scss" scoped>
-
-</style> -->
