@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: true,
   target: Static,
   app: {
-    baseURL: '/aklowadrumband/', // baseURL: '/<repository>/'
+    baseURL: '/aklowadrum/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets',
     head: {
       title: 'Aklowa Drum Band',
