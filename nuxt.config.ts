@@ -3,7 +3,7 @@ import { Static } from "vue";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
-  ssr: false,
+  ssr: true,
   target: Static,
   app: {
     baseURL: '/aklowadrumz/', // baseURL: '/<repository>/'
