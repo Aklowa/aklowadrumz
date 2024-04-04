@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     }
 },
 build: {
+  assetsDir: 'assets',
 transpile: ['@fortawesome/vue-fontawesome'],
 chunkSizeWarningLimit: 1600,
 cssMinify: {

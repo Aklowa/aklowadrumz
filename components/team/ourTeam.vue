@@ -5,7 +5,7 @@
 			<h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">The talented people behind the scenes</h1>
 			<div class="flex flex-row flex-wrap-reverse justify-center mt-8">
 				<div class="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
-					<img alt="" class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="../../assets/img/ak_img/ben22.jpg">
+					<img alt="" class="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="../../assets/img/ak_img/Ben22.jpg">
 					<div class="flex-1 my-4">
 						<p class="text-xl font-semibold leading-snug">Benjamin Borketey</p>
 						<p>Band Leader</p>
