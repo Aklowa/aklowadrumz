@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     prerender: {
-      routes: ['/', '/blog']
+      routes: ['/', '/blog/history', '/blog/history', '/blog/dance', '/blog/acrobatics']
     }
   },
   app: {
