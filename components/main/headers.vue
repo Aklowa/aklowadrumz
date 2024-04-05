@@ -1,8 +1,11 @@
 <template>
   <div>
-    <section
-      class="h-screen relative bg-[url(../../assets/img/proper/Nat.webp)] bg-cover bg-center bg-no-repeat"
-    >
+    <section class="h-screen relative bg-white">
+      <img
+        src="../../assets/img/proper/Nat.webp"
+        class="absolute inset-0 object-cover w-full h-full z-0"
+        alt="background image"
+      >
       <div
         class="absolute col-start-1 row-start-1 bg-white/75 bg-opacity-70 w-full h-full   sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
       />

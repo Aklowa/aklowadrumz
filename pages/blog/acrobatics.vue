@@ -57,10 +57,14 @@
     <section>
       <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
         <div
-          class="bg-cover bg-center text-center overflow-hidden bg-[url(../../assets/img/ak_img/int_eent.jpg)]"
-          style="min-height: 400px;"
+          class="flex justify-center "
           title="Woman holding a mug"
-        />
+        >
+          <img
+            src="~/assets/img/ak_img/int_eent.jpg"
+            class="rounded-lg"
+          >
+        </div>
         <div class="max-w-3xl mx-auto">
           <div
             class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/no-parsing-error -->
 <template>
   <div class="space-y-12 dark:bg-gray-100 dark:text-gray-800">
     <header class=" bg-rose-100 p-4">
@@ -56,93 +57,99 @@
     <section>
       <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
         <div
-          class="bg-cover bg-center text-center overflow-hidden bg-[url(../../assets/img/ak_img/int_eent2.jpg)]"
+          class="flex justify-center"
           style="min-height: 400px;"
-        
-      <div>
-          <div class="max-w-3xl mx-auto">
-            <div
-              class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"
-            >
-              <div class="bg-white relative top-0 -mt-32 p-5 sm:p-10">
-                <h1
+        >
+          <img
+            src="~/assets/img/ak_img/int_eent2.jpg"
+            class="rounded-lg"
+            alt="international_events"
+          >
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <div
+            class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal"
+          >
+            <div class="bg-white relative top-0 -mt-32 p-5 sm:p-10">
+              <h1
+                href="#"
+                class="text-gray-900 font-bold text-3xl mb-2"
+              >
+                International Events
+              </h1>
+              <p class="text-gray-700 text-xs mt-2">
+                Written By:
+                <a
                   href="#"
-                  class="text-gray-900 font-bold text-3xl mb-2"
+                  class="text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
                 >
-                  International Events
-                </h1>
-                <p class="text-gray-700 text-xs mt-2">
-                  Written By:
-                  <a
-                    href="#"
-                    class="text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                  >
-                    Osahene Blackmore
-                  </a> In
-                  <a
-                    href="#"
-                    class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                  >
-                    Entertainment
-                  </a>
-                </p>
+                  Osahene Blackmore
+                </a> In
+                <a
+                  href="#"
+                  class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                >
+                  Entertainment
+                </a>
+              </p>
 
-                <p class="text-base leading-8 my-5">
-                  The Aklowa Drum Band isn't just a Ghanaian institution; they're cultural ambassadors, carrying the vibrant pulse of traditional dance across international borders. Led by the visionary Ben Borketey, Aklowa has captivated audiences worldwide with their electrifying performances.
-                </p>
+              <p class="text-base leading-8 my-5">
+                The Aklowa Drum Band isn't just a Ghanaian institution; they're cultural ambassadors, carrying the vibrant pulse of traditional dance across international borders. Led by the visionary Ben Borketey, Aklowa has captivated audiences worldwide with their electrifying performances.
+              </p>
 
-                <!-- <h3 class="text-2xl font-bold my-5"> The feeling</h3> -->
+              <!-- <h3 class="text-2xl font-bold my-5"> The feeling</h3> -->
 
-                <p class="text-base leading-8 my-5">
-                  The Aklowa experience transcends performance. They organize events where audiences can witness the electrifying energy of Ghanaian dance. Imagine witnessing the powerful kicks and intricate footwork of the Djorwaa dance, expertly guided by the rhythmic pulse of the drums. Band members like Benjamin Borketey, Daniel Kpakpo, Ebenezer Tawiah, and Rejoice A. Quaye are not just musicians; they're storytellers, their bodies translating the rich tapestry of Ghanaian culture through movement.
-                </p>
+              <p class="text-base leading-8 my-5">
+                The Aklowa experience transcends performance. They organize events where audiences can witness the electrifying energy of Ghanaian dance. Imagine witnessing the powerful kicks and intricate footwork of the Djorwaa dance, expertly guided by the rhythmic pulse of the drums. Band members like Benjamin Borketey, Daniel Kpakpo, Ebenezer Tawiah, and Rejoice A. Quaye are not just musicians; they're storytellers, their bodies translating the rich tapestry of Ghanaian culture through movement.
+              </p>
 
-                <!-- <blockquote class="border-l-4 text-base italic leading-8 my-5 p-5 text-indigo-600">Lorem Ipsum is simply
+              <!-- <blockquote class="border-l-4 text-base italic leading-8 my-5 p-5 text-indigo-600">Lorem Ipsum is simply
                     dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                     dummy text ever since the 1500s
                 </blockquote> -->
 
-                <p class="text-base leading-8 my-5">
-                  Aklowa's international acclaim stems from their participation in prestigious events across the globe. They've brought their infectious energy to stages in the UK, Italy, and France, leaving audiences enthralled by the intricate footwork and powerful kicks of dances like the Djorwaa. Their captivating performances transcend language barriers, fostering a deeper understanding and appreciation of Ghanaian culture.
-                </p>
-                <p class="text-base leading-8 my-5">
-                  A defining moment in Aklowa's history came in 2002 when they received a royal invitation. Performing for Queen Elizabeth II, they showcased the artistry and depth of Ghanaian tradition on one of the world's most esteemed platforms. This prestigious performance cemented Aklowa's place as a leading force in promoting Ghanaian cultural exchange.
-                </p>
-                <p class="text-base leading-8 my-5">
-                  Beyond captivating audiences, Aklowa actively fosters international cultural collaboration. Their workshops and educational programs allow international participants to delve into the intricacies of Ghanaian drumming and dance. This dedication ensures that these precious traditions are not just preserved but also shared and celebrated on a global scale.
-                </p>
+              <p class="text-base leading-8 my-5">
+                Aklowa's international acclaim stems from their participation in prestigious events across the globe. They've brought their infectious energy to stages in the UK, Italy, and France, leaving audiences enthralled by the intricate footwork and powerful kicks of dances like the Djorwaa. Their captivating performances transcend language barriers, fostering a deeper understanding and appreciation of Ghanaian culture.
+              </p>
+              <p class="text-base leading-8 my-5">
+                A defining moment in Aklowa's history came in 2002 when they received a royal invitation. Performing for Queen Elizabeth II, they showcased the artistry and depth of Ghanaian tradition on one of the world's most esteemed platforms. This prestigious performance cemented Aklowa's place as a leading force in promoting Ghanaian cultural exchange.
+              </p>
+              <p class="text-base leading-8 my-5">
+                Beyond captivating audiences, Aklowa actively fosters international cultural collaboration. Their workshops and educational programs allow international participants to delve into the intricacies of Ghanaian drumming and dance. This dedication ensures that these precious traditions are not just preserved but also shared and celebrated on a global scale.
+              </p>
 
 
-                <a
-                  href="#"
-                  class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                >
-                  #Dance
-                </a>,
-                <a
-                  href="#"
-                  class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                >
-                  #Tradition
-                </a>,
-                <a
-                  href="#"
-                  class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                >
-                  #African
-                </a>,
-                <a
-                  href="#"
-                  class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-                >
-                  #Drums
-                </a>
-              </div>
+              <a
+                href="#"
+                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+              >
+                #Dance
+              </a>,
+              <a
+                href="#"
+                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+              >
+                #Tradition
+              </a>,
+              <a
+                href="#"
+                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+              >
+                #African
+              </a>,
+              <a
+                href="#"
+                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+              >
+                #Drums
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
 
     <section>

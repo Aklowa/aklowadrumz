@@ -1,14 +1,15 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div>
-<Headers/>
-<About />
-<Features />
-<Gall />
-<Album />
-<Team />
-<Contact />
-<Footer />
-    </div>
+  <div>
+    <Headers />
+    <About />
+    <Features />
+    <Gall />
+    <Album />
+    <Team />
+    <Contact />
+    <Footer />
+  </div>
 </template>
 
 <script setup>

@@ -24,8 +24,13 @@ cssMinify: {
   preset: 'default',
 },
 },
-    
-publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
+
+publicRuntimeConfig: {
+  static: {
+    publicPath: "/" // or a path relative to your domain (e.g., "/my-app/")
+  }
+},
+// publicPath: process.env.npm_lifecycle_event === 'generate' ? '/pwa/' : '/_nuxt/',
 
 optimization: {
   splitChunks: {
@@ -40,7 +45,7 @@ splitChunks: {
   commons: true,
 },
 
-    modules: ['@hypernym/nuxt-gsap','@nuxtjs/tailwindcss', 'nuxt-purgecss', '@nuxtjs/eslint-module' ],
+    modules: ['@hypernym/nuxt-gsap','@nuxtjs/tailwindcss', 'nuxt-purgecss', '@nuxtjs/eslint-module', 'nuxt-swiper', ],
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
     configPath: 'tailwind.config',
