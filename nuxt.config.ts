@@ -24,7 +24,12 @@ cssMinify: {
   preset: 'default',
 },
 },
-
+postcss: {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+},
 publicRuntimeConfig: {
   static: {
     publicPath: "/" // or a path relative to your domain (e.g., "/my-app/")
@@ -56,6 +61,7 @@ splitChunks: {
     viewer: true,
   },
   css: [
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    '~/assets/css/tailwind.css'
     ],
 })
