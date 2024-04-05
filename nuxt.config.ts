@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
   ssr: true,
   target: Static,
+  nitro: {
+    preset: 'vercel',
+    prerender: {
+      routes: ['/', '/blog']
+    }
+  },
   app: {
     baseURL: '/aklowadrumz/', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets',
@@ -50,7 +56,14 @@ splitChunks: {
   commons: true,
 },
 
-    modules: ['@hypernym/nuxt-gsap','@nuxtjs/tailwindcss', 'nuxt-purgecss', '@nuxtjs/eslint-module', 'nuxt-swiper', ],
+    modules: [
+      '@hypernym/nuxt-gsap',
+      '@nuxtjs/tailwindcss',
+      'nuxt-purgecss',
+      '@nuxtjs/eslint-module',
+      'nuxt-swiper',
+      "@nuxt/image"
+    ],
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
     configPath: 'tailwind.config',
