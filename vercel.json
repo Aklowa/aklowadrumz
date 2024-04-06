@@ -1,41 +1,17 @@
 {
-    "headers": [
-      {
-        "source": "assets/**/*.{jpg,jpeg,png,gif,webp}",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "image/jpeg"
-          }
-        ]
-      },
-      {
-        "source": "**/*.js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      },
-      {
-        "source": "**/*.css",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/css"
-          }
-        ]
-      },
-      {
-        "source": "**/*.html",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/html; charset=utf-8"
-          }
-        ]
+  "builds": [
+    {
+      "use": "@vercel/static-build",
+      "src": "package.json",
+      "config": {
+        "zeroConfig": true,
+        "framework": "nuxtjs",
+        "buildCommand": "npm generate && mv dist custom-output",
+        "outputDirectory": "custom-output"
       }
-    ]
+    }
+  ],
+  "projectSettings": {
+    "nodeVersion": "20.x"
   }
-  
+}
