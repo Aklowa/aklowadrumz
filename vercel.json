@@ -1,0 +1,41 @@
+{
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|gif|webp)",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "source": "**/*.js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      },
+      {
+        "source": "**/*.css",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/css"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/html; charset=utf-8"
+          }
+        ]
+      }
+    ]
+  }
+  

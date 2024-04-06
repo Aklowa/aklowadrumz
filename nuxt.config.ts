@@ -13,13 +13,21 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: '/aklowadrumz/', // baseURL: '/<repository>/'
-    buildAssetsDir: 'assets',
     head: {
       title: 'Aklowa Drum Band',
       meta: [
             { name: 'viewport', content: 'width=device-width, initial-scale=1' }
         ],
         script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true }],
+        link: [
+          {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css',
+            integrity: 'sha512-Q8izPIyW9zSY5YvuhCT5MUq9FNjWzUdHWXLjtXBQWEvCrAB2eUHbxmhdSDsEzAWBXxlYwmissQFBhqSsL/TshA==',
+            crossorigin: 'anonymous',
+            referrerpolicy: 'no-referrer',
+          },
+        ],
     }
 },
 build: {
