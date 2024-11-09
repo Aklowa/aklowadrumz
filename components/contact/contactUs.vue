@@ -24,7 +24,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <span>Fake address, 9999 City</span>
+              <span>10 Otu Blohu Street, Dzorwulu, Accra</span>
             </p>
             <p class="flex items-center">
               <svg
